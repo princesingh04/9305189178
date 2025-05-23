@@ -17,7 +17,7 @@ async function fetchToken() {
         });
 
         bearerToken = response.data.access_token;
-        tokenExpiry = Date.now() + 9 * 60 * 1000; // Assuming token lasts ~10 mins
+        tokenExpiry = Date.now() + 9 * 60 * 1000; 
 
         console.log("🔑 Fetched new token!");
         return bearerToken;
